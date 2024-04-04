@@ -20,7 +20,7 @@ This program is designed to solve Shakashaka puzzles. Shakashaka is a logic puzz
 
 1. Clone the repository to your local machine.
 2. Make sure you have all the dependencies installed.
-3. Run the `shakashaka_solver.py` file.
+3. Run the `Shakashaka.py` file.
 
 ## How to Use
 
