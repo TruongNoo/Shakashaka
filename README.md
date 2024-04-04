@@ -1,43 +1,36 @@
-# Shakashaka
+# Shakashaka Puzzle Solver
 
-This program is designed to solve Shakashaka puzzles. Shakashaka is a logic puzzle where the objective is to shade some cells in a grid according to the rules:
+## Giới thiệu
 
-1. No two shaded cells may share an edge.
-2. All unshaded cells must be connected.
-3. Shaded cells cannot form a 2x2 square.
-4. The unshaded cells must form a single continuous area (like a maze).
+Đây là một ứng dụng Python giúp giải các câu đố Shakashaka. Shakashaka là một loại câu đố logic trên một lưới hình vuông, trong đó bạn phải xác định mỗi ô có màu đen hay trắng và cách chúng kết nối với nhau.
 
-## Getting Started
+## Cách sử dụng
 
-### Prerequisites
+1. **Chạy ứng dụng**: Chạy script `Shakashaka.py` để mở giao diện ứng dụng.
+2. **Nhập dữ liệu**: Nhập ma trận `A` và ma trận `B` vào các biến tương ứng. Ma trận `A` chứa các kí tự mô tả màu sắc và các loại cạnh của mỗi ô, trong khi ma trận `B` chứa các số xác định số lượng các ô đen xung quanh mỗi ô trắng.
+3. **Giải puzzle**: Nhấn nút "Solve" để giải puzzle. Kết quả sẽ được hiển thị trên cửa sổ ứng dụng.
+
+## Yêu cầu
 
 - Python 3.x
 - Tkinter
 - NumPy
-- Gurobi Optimization (if you want to modify or run the linear programming solver)
+- Thư viện Gurobi: `pip install gurobipy`
 
-### Installing
+## Cấu trúc mã
 
-1. Clone the repository to your local machine.
-2. Make sure you have all the dependencies installed.
-3. Run the `Shakashaka.py` file.
+- `Shakashaka.py`: Chứa mã chính của ứng dụng.
+- `linear_programming.py`: Chứa hàm giải bài toán tối ưu sử dụng thư viện Gurobi.
+- `example_puzzles.py`: Một số ví dụ về ma trận `A` và `B` cho các câu đố Shakashaka.
 
-## How to Use
+## Tham khảo
 
-1. Run the program.
-2. Enter the dimensions of the puzzle grid and the initial configuration of shaded and unshaded cells.
-3. Click the "Solve" button to find a solution.
-4. The program will display the solved puzzle.
+- [Shakashaka Puzzle Solver](https://github.com/TruongNoo/Shakashaka.git): Repository GitHub của dự án.
 
-## Features
+## Tác giả
 
-- Graphical user interface for easy puzzle input and visualization.
-- Utilizes linear programming (with Gurobi) to find solutions.
+- **Nhóm 3 thành viên**: Đã tạo dự án và phát triển mã nguồn.
 
-## Contributing
+## Bản quyền
 
-Contributions are welcome! Please feel free to submit issues or pull requests.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Dự án được phát hành dưới [Giấy phép MIT](LICENSE).
